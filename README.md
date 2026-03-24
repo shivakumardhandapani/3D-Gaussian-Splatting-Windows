@@ -104,7 +104,6 @@ Detailed benchmark evaluations are documented by [taming-3dgs](https://github.co
 ├── SIBR_viewers/           # SIBR viewer source (git submodule)
 └── assets/                 # Documentation images and evaluation charts
 ```
->>>>>>> 8ddfa65cfe299da818f984fa5d7e509c05e2d55b
 
 ---
 
@@ -156,7 +155,7 @@ python train.py -s <dataset> -r 2 --densify_grad_threshold 0.0004 --densify_unti
 
 ---
 
-## Evaluation Results
+## My Evaluation Results
 
 In progres...
 
