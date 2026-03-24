@@ -23,23 +23,31 @@ These Gaussians are **differentiable** and rendered via a tile-based rasterizer 
 ### Pipeline at a Glance
 
 ```
-Photos of a scene
-     │
-     ▼
-┌──────────┐
-│ COLMAP   │  Structure-from-Motion → camera poses + sparse point cloud
-└────┬─────┘
-     │
-     ▼
-┌───────────────┐
-│  Optimizer    │  PyTorch + CUDA — iteratively refines 3D Gaussians
-│  (train.py)   │  from sparse points via differentiable rasterization
-└────┬──────────┘
-     │
-     ▼
-┌──────────────┐
-│  SIBR Viewer │  OpenGL real-time viewer — navigate the trained scene
-└──────────────┘
+Video of a scene
+        │
+        ▼
+   ┌──────────┐
+   │  ffmpeg  │  Extracts individual frames from the video at a chosen fps
+   └────┬─────┘
+        │
+        ▼
+   Photos (input images)
+        │
+        ▼
+   ┌──────────┐
+   │ COLMAP   │  Structure-from-Motion → camera poses + sparse point cloud
+   └────┬─────┘
+        │
+        ▼
+   ┌───────────────┐
+   │  Optimizer    │  PyTorch + CUDA — iteratively refines 3D Gaussians
+   │  (train.py)   │  from sparse points via differentiable rasterization
+   └────┬──────────┘
+        │
+        ▼
+   ┌──────────────┐
+   │  SIBR Viewer │  OpenGL real-time viewer — navigate the trained scene
+   └──────────────┘
 ```
 
 ### Key Concepts I'm Learning
