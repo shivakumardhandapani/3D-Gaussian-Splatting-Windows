@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 3D Gaussian Splatting — My Learning Journey
 =======
 # 3D Gaussian Splatting — Windows Setup & Learning Reference (In progress)
@@ -8,7 +7,6 @@
 
 This repo documents my hands-on journey learning 3D Gaussian Splatting — from setting up the pipeline on a consumer GPU to understanding the math well enough to eventually implement it from scratch.
 
-<<<<<<< HEAD
 > For the full installation walkthrough, follow [Jon Stephens' guide](https://github.com/jonstephens85/gaussian-splatting-Windows) and his [YouTube tutorial](https://youtu.be/UXtuigy_wYc).
 =======
 ---
@@ -157,18 +155,6 @@ python train.py -s <dataset> -r 2 --densify_grad_threshold 0.0004 --densify_unti
 ## Evaluation Results
 
 Benchmark evaluations are documented in [`results.md`](results.md) — comparing the default vs. accelerated rasterizer, Sparse Adam optimizer, depth regularization, antialiasing, and exposure compensation across MipNeRF360, Tanks&Temples, and Deep Blending datasets.
-
----
-
-## Learning Roadmap
-
-| Phase | Focus | Status |
-| --- | --- | --- |
-| **1** | 3D Transformations & Gaussian Math Foundations | In Progress |
-| **2** | Structure from Motion & COLMAP Internals | Upcoming |
-| **3** | Core 3DGS — Splatting Projection, Differentiable Rasterizer, Training Loop | Upcoming |
-| **4** | CUDA Rasterization, Spherical Harmonics, Export & Evaluation | Upcoming |
-| **5** | Full From-Scratch Implementation & Research Extensions | Upcoming |
 
 ---
 
