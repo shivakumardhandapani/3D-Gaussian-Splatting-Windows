@@ -24,22 +24,22 @@ These Gaussians are **differentiable** and rendered via a tile-based rasterizer 
 
 ```
 Photos of a scene
-        │
-        ▼
-   ┌──────────┐
-   │ COLMAP   │  Structure-from-Motion → camera poses + sparse point cloud
-   └────┬─────┘
-        │
-        ▼
-   ┌───────────────┐
-   │  Optimizer    │  PyTorch + CUDA — iteratively refines 3D Gaussians
-   │  (train.py)   │  from sparse points via differentiable rasterization
-   └────┬──────────┘
-        │
-        ▼
-   ┌──────────────┐
-   │  SIBR Viewer │  OpenGL real-time viewer — navigate the trained scene
-   └──────────────┘
+     │
+     ▼
+┌──────────┐
+│ COLMAP   │  Structure-from-Motion → camera poses + sparse point cloud
+└────┬─────┘
+     │
+     ▼
+┌───────────────┐
+│  Optimizer    │  PyTorch + CUDA — iteratively refines 3D Gaussians
+│  (train.py)   │  from sparse points via differentiable rasterization
+└────┬──────────┘
+     │
+     ▼
+┌──────────────┐
+│  SIBR Viewer │  OpenGL real-time viewer — navigate the trained scene
+└──────────────┘
 ```
 
 ### Key Concepts I'm Learning
