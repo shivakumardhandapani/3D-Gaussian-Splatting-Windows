@@ -1,0 +1,25 @@
+var classPlaneEstimator =
+[
+    [ "PlaneEstimator", "classPlaneEstimator.html#a4a2f5fb2e75cad69947219f11022a7f8", null ],
+    [ "PlaneEstimator", "classPlaneEstimator.html#aaef0c520eb2ff89bd0cd07a5bb787c6e", null ],
+    [ "~PlaneEstimator", "classPlaneEstimator.html#a2c7342583a5de14c378a2b86d74d6662", null ],
+    [ "computePlanes", "classPlaneEstimator.html#a69729bada569834a1c530f5add1ef6dd", null ],
+    [ "displayPCAndPlane", "classPlaneEstimator.html#a477d329c1f6ade34cafc6b661d48ce54", null ],
+    [ "estimateGroundPlane", "classPlaneEstimator.html#acd2d0191d504dfdcc1a555d1a3c776e7", null ],
+    [ "estimateMedianVec", "classPlaneEstimator.html#a7d55d6d1a191d2f23cf7e81c276a4bc0", null ],
+    [ "estimatePlane", "classPlaneEstimator.html#a5e29f5c35cd12128a4c02ded4886eeb7", null ],
+    [ "getMeshPlane", "classPlaneEstimator.html#aca70352da9a1a9a6f3b6cae0409b990d", null ],
+    [ "plane3Pts", "classPlaneEstimator.html#a1ec90017f529c14baa38f5cb717f9c4e", null ],
+    [ "votePlane", "classPlaneEstimator.html#a5eb138f1b4056862fb0378c82fca2176", null ],
+    [ "_centers", "classPlaneEstimator.html#a49096ede8429ff1206e3f53ff939f1e7", null ],
+    [ "_covMeans", "classPlaneEstimator.html#aedcd641acb523147c04ea8e35ffaf0de", null ],
+    [ "_numPoints3D", "classPlaneEstimator.html#a20d6da1f4afeb2223ec28eb5e2318998", null ],
+    [ "_planeComputed", "classPlaneEstimator.html#a7b5c80863b70a76cbdf431a8dbd387b7", null ],
+    [ "_planes", "classPlaneEstimator.html#aeb9e58a80972753840b676802edc7822", null ],
+    [ "_Points", "classPlaneEstimator.html#a6e97b50b0b2f01f0363279dd86e2c3e7", null ],
+    [ "_points", "classPlaneEstimator.html#ac41e970cf2d8804f2c3f32fe766686b5", null ],
+    [ "_remainNormals3D", "classPlaneEstimator.html#a812890c01a5958447650430bc4cb9996", null ],
+    [ "_remainPoints3D", "classPlaneEstimator.html#a3b2996e78136fe1046e55d38ecba825d", null ],
+    [ "_Triangles", "classPlaneEstimator.html#a5a934a9dbe29b117ec561ea3bb60a186", null ],
+    [ "_votes", "classPlaneEstimator.html#aad14b15a9077f8161b06c80a6fa43cee", null ]
+];

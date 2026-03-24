@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['a_5872',['A',['../structsibr_1_1Frustum_1_1Plane.html#afc80d4b5a978028dc864c5c591827b11',1,'sibr::Frustum::Plane']]],
+  ['active_5873',['active',['../structsibr_1_1DatasetView_1_1ReprojectionData.html#ae14436133323888232216d796f774b3f',1,'sibr::DatasetView::ReprojectionData::active()'],['../classsibr_1_1MeshData.html#adc27bbe6faa5436cf619258ffedec8fc',1,'sibr::MeshData::active()']]],
+  ['adjacency_5874',['adjacency',['../structsibr_1_1Mesh_1_1RenderingOptions.html#abd149eb841f595796be6659eb4c479c6',1,'sibr::Mesh::RenderingOptions']]],
+  ['alpha_5875',['alpha',['../structsibr_1_1HighlightData.html#abada6274467208d778fc3887646e9c22',1,'sibr::HighlightData::alpha()'],['../classsibr_1_1ShaderAlphaMVP.html#ace81d9a422c4e4e8d3b9462e217020e1',1,'sibr::ShaderAlphaMVP::alpha()'],['../classsibr_1_1MeshData.html#a7fd2274dd52a1abbd7162c1cd054573c',1,'sibr::MeshData::alpha()']]],
+  ['alphagl_5876',['alphaGL',['../classsibr_1_1DrawUtilities.html#afaeb54b7bd7798e5882ec201f77df2d2',1,'sibr::DrawUtilities::alphaGL()'],['../classsibr_1_1InterfaceUtilities.html#af0828731530518ec336a0311682d749d',1,'sibr::InterfaceUtilities::alphaGL()']]],
+  ['alphameshgl_5877',['alphaMeshGL',['../classsibr_1_1InterfaceUtilities.html#ad4de683386602dbc760d157402eab854',1,'sibr::InterfaceUtilities']]],
+  ['alphas_5878',['alphas',['../structsibr_1_1ULRAppArgs.html#ac66b7286cba07cf1d82045fb41449566',1,'sibr::ULRAppArgs']]],
+  ['aoisactive_5879',['AoIsActive',['../structsibr_1_1MaterialMesh_1_1AmbientOcclusion.html#acddd0270f543cc8dd8a12703212b9a73',1,'sibr::MaterialMesh::AmbientOcclusion']]],
+  ['appname_5880',['appName',['../structsibr_1_1AppArgs.html#a585474d15fd6c066f90c39bb834c40e1',1,'sibr::AppArgs']]],
+  ['apppath_5881',['appPath',['../structsibr_1_1AppArgs.html#aabad2a655b956f3c0474de6af6c962ce',1,'sibr::AppArgs']]],
+  ['args_5882',['args',['../classsibr_1_1CommandLineArgs.html#a33eac3cae7d24cbf84fa434b6a09a5d8',1,'sibr::CommandLineArgs::args()'],['../classTaskPipeline_1_1TaskPipeline.html#a54ab7060118fb7bbc6259e82494d591b',1,'TaskPipeline.TaskPipeline.args()']]],
+  ['attenuationdistance_5883',['AttenuationDistance',['../structsibr_1_1MaterialMesh_1_1AmbientOcclusion.html#a59d64b7a9ee6377f0abd01aeda4b7383',1,'sibr::MaterialMesh::AmbientOcclusion']]],
+  ['avg_5fresolution_5884',['avg_resolution',['../namespaceibr__preprocess__rc__to__sibr.html#ac0aeaa3c7c61f7db900c2374a8ab9279',1,'ibr_preprocess_rc_to_sibr']]],
+  ['avgheightarg_5885',['avgHeightArg',['../structDistordCropAppArgs.html#a42f130086d87967a31476171b687b338',1,'DistordCropAppArgs']]],
+  ['avgresolutionarg_5886',['avgResolutionArg',['../structCropAppArgs.html#a1417bf057e7cfecf08afa54d62616b47',1,'CropAppArgs']]],
+  ['avgwidtharg_5887',['avgWidthArg',['../structDistordCropAppArgs.html#a8d4a9c755dbc45c16f849cc582ed73b7',1,'DistordCropAppArgs']]]
+];

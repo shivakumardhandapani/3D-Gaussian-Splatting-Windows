@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['l_6133',['l',['../group__sibr__video.html#ga21ce28c8f9b6ba40dd939ad8a2c9ddc2',1,'sibr::VideoVolume::l()'],['../group__sibr__video.html#ga67585b9c6fdf97cf14b54389e8eeacab',1,'sibr::PyramidLayer::l()']]],
+  ['lastpoint2d_6134',['lastPoint2D',['../classsibr_1_1TrackBall.html#a6cd45656e83d1d3a7b021299fdac7b6e',1,'sibr::TrackBall']]],
+  ['layers_6135',['layers',['../group__sibr__video.html#gabdf4f68ff0d8979b74a5919100b20cc9',1,'sibr::VideoGaussianPyramid::layers()'],['../group__sibr__video.html#gae0656e9f7ea33a93626ae4be23c4b564',1,'sibr::VideoLaplacianPyramid::layers()']]],
+  ['layersdata_6136',['layersData',['../classsibr_1_1MultiViewInterface.html#aec873db6855816a0a0104ad5f28f8f01',1,'sibr::MultiViewInterface']]],
+  ['light_5fpos_6137',['light_pos',['../classsibr_1_1MeshRenderer.html#aaa9637fdec1cdf2a79d251928eb69545',1,'sibr::MeshRenderer']]],
+  ['light_5fposition_6138',['light_position',['../classsibr_1_1MeshShadingShader.html#abad54e6d48556b9cfa02646ea56b172e',1,'sibr::MeshShadingShader']]],
+  ['line_6139',['line',['../namespaceibr__convert__old__to__new.html#a1015a04472844d4b4825b54337490656',1,'ibr_convert_old_to_new.line()'],['../namespaceibr__preprocess__rc__to__sibr.html#a4465ab2f7b22807982d455fad6113c63',1,'ibr_preprocess_rc_to_sibr.line()']]],
+  ['linecolor_6140',['lineColor',['../classsibr_1_1MeshRenderer.html#a1732813d96116b199af859279ab9fa85',1,'sibr::MeshRenderer']]],
+  ['lines_6141',['lines',['../classsibr_1_1MeshRenderer.html#a5ee6c22f5a7f29f68e8a14707882b809',1,'sibr::MeshRenderer']]],
+  ['list_5fimage_5ffile_6142',['list_image_file',['../namespaceibr__convert__old__to__new.html#aae43c46ba148ee9bc73c09f1b3d62178',1,'ibr_convert_old_to_new.list_image_file()'],['../namespaceibr__preprocess__rc__to__sibr.html#a802fa9a51640fe1ad45b26a2468b2738',1,'ibr_preprocess_rc_to_sibr.list_image_file()']]],
+  ['list_5fimages_6143',['list_images',['../namespaceibr__convert__old__to__new.html#ab37c476c8646c89e7c437e4b9b763148',1,'ibr_convert_old_to_new.list_images()'],['../namespaceibr__preprocess__rc__to__sibr.html#a0a073282a63ae52306a4bdf37e884d86',1,'ibr_preprocess_rc_to_sibr.list_images()']]],
+  ['list_5fmeshes_6144',['list_meshes',['../classsibr_1_1MultiMeshManager.html#a93d4b8f54d48b29f097f09c711668762',1,'sibr::MultiMeshManager']]],
+  ['list_5fof_5fcameras_6145',['list_of_cameras',['../classbundle_1_1Bundle.html#adf9210502a71a0dcdffa79bd6aa241c3',1,'bundle::Bundle']]],
+  ['list_5fof_5fexcluded_5fcams_6146',['list_of_excluded_cams',['../classbundle_1_1Bundle.html#a76281359c64f3868c6580581d262f076',1,'bundle::Bundle']]],
+  ['list_5fof_5ffeature_5fpoints_6147',['list_of_feature_points',['../classbundle_1_1BundleCamera.html#a0deb27309d4cb9492b035342305b70c6',1,'bundle.BundleCamera.list_of_feature_points()'],['../classbundle_1_1Bundle.html#acaed27df124b4a7c66ecea19542b5cc0',1,'bundle.Bundle.list_of_feature_points()']]],
+  ['list_5fof_5finput_5fimages_6148',['list_of_input_images',['../classbundle_1_1Bundle.html#a3f0e6211e45f8e6c23bb42a963ac9ee0',1,'bundle::Bundle']]],
+  ['listmeshes_6149',['listMeshes',['../classsibr_1_1MeshRenderer.html#a1fcbc873127ac6afb0611614b85fa918',1,'sibr::MeshRenderer']]],
+  ['loaded_6150',['loaded',['../classsibr_1_1Video.html#ae32be07e08d53837df597a71d76e4f50',1,'sibr::Video']]],
+  ['loadingtex_6151',['loadingTex',['../structsibr_1_1PingPongTexture.html#a62ddb553e4e877e47b574b2863c9fe41',1,'sibr::PingPongTexture::loadingTex()'],['../classsibr_1_1VideoPlayer.html#a68652c45271e8ddda4e4f3f9e697c19b',1,'sibr::VideoPlayer::loadingTex()']]],
+  ['loadingtexarray_6152',['loadingTexArray',['../structsibr_1_1MultipleVideoDecoder.html#a8fcb81f7ba17616f26d19a382a06e943',1,'sibr::MultipleVideoDecoder']]],
+  ['lock_6153',['lock',['../structsibr_1_1LogExit.html#ab50492cd9f5010cb64acc47617691952',1,'sibr::LogExit']]],
+  ['lodgl_6154',['lodGL',['../classsibr_1_1DrawUtilities.html#a11b68310edd80cc7bbe8e75d116f2de6',1,'sibr::DrawUtilities']]],
+  ['log_5ffile_5fname_6155',['LOG_FILE_NAME',['../dataset__tools_2preprocess_2cropFromCenter_2main_8cpp.html#ad262b6f225184b2cf907834223edf4d0',1,'main.cpp']]]
+];
