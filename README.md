@@ -68,9 +68,9 @@ Video of a scene
 
 ## Evaluation Results
 
-Detailed benchmark evaluations are documented in [`results.md`](results.md), covering:
+Detailed benchmark evaluations are documented by [taming-3dgs](https://github.com/graphdeco-inria/diff-gaussian-rasterization/tree/3dgs_accel) in [`results.md`](results.md), covering:
 
-- **Default rasterizer** vs. **Accelerated rasterizer** (from [taming-3dgs](https://github.com/graphdeco-inria/diff-gaussian-rasterization/tree/3dgs_accel))
+- **Default rasterizer** vs. **Accelerated rasterizer**
 - **Optimizer comparison** — Default optimizer vs. Sparse Adam
 - **Feature ablations** — Depth regularization (DR), antialiasing (AA), exposure compensation
 - **Metrics** — PSNR, SSIM, LPIPS across MipNeRF360, Tanks&Temples, and Deep Blending datasets
