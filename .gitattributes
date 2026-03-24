@@ -1,1 +1,9 @@
-static/* linguist-vendored
+# Only show Python in GitHub language stats
+viewers/* linguist-vendored
+SIBR_viewers/* linguist-vendored
+*.html linguist-vendored
+*.js linguist-vendored
+*.css linguist-vendored
+*.glsl linguist-vendored
+*.cu linguist-vendored
+*.cuh linguist-vendored
