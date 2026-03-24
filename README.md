@@ -1,5 +1,3 @@
-# 3D Gaussian Splatting — My Learning Journey
-=======
 # 3D Gaussian Splatting — Windows Setup & Learning Reference (In progress)
 
 > Forked from [jonstephens85/gaussian-splatting-Windows](https://github.com/jonstephens85/gaussian-splatting-Windows), which builds on the original [INRIA implementation](https://github.com/graphdeco-inria/gaussian-splatting) by Kerbl et al. (SIGGRAPH 2023).
