@@ -51,6 +51,22 @@ Photos of a scene
 
 - **Loss Function** — A weighted combination of L1 photometric loss and D-SSIM structural similarity: `L = (1 - λ) * L1 + λ * D-SSIM`, where λ = 0.2 by default.
 
+- **Depth Regularization & Antialiasing** — Extensions to the base method that improve geometric consistency and reduce aliasing artifacts, evaluated across standard benchmarks (see [results.md](results.md)).
+
+- **Exposure Compensation** — Optimizing a per-image 3×4 affine color transform to handle exposure variations across input photographs, improving training coherence without affecting real-time rendering.
+
+---
+
+## Evaluation Results
+
+Detailed benchmark evaluations are documented in [`results.md`](results.md), covering:
+
+- **Default rasterizer** vs. **Accelerated rasterizer** (from [taming-3dgs](https://github.com/graphdeco-inria/diff-gaussian-rasterization/tree/3dgs_accel))
+- **Optimizer comparison** — Default optimizer vs. Sparse Adam
+- **Feature ablations** — Depth regularization (DR), antialiasing (AA), exposure compensation
+- **Metrics** — PSNR, SSIM, LPIPS across MipNeRF360, Tanks&Temples, and Deep Blending datasets
+- **Training time comparisons** — Baseline vs. accelerated rasterizer with both optimizer variants
+
 ---
 
 ## Repository Structure
@@ -61,6 +77,7 @@ Photos of a scene
 ├── convert.py              # Prepares raw images → COLMAP SfM dataset
 ├── metrics.py              # Computes PSNR, SSIM, LPIPS evaluation metrics
 ├── full_eval.py            # End-to-end evaluation on standard benchmarks
+├── results.md              # Benchmark evaluation results with charts
 ├── environment.yml         # Conda environment specification
 │
 ├── gaussian_renderer/      # Differentiable Gaussian rasterization pipeline (Python)
@@ -71,8 +88,12 @@ Photos of a scene
 │   └── simple-knn/                   # K-nearest-neighbor utility
 ├── lpipsPyTorch/           # LPIPS perceptual metric
 ├── utils/                  # Loss functions, image I/O, general helpers
-├── SIBR_viewers/           # Real-time OpenGL viewer (git submodule)
-└── assets/                 # Images for documentation
+│
+├── input/                  # Input images / scene data for training
+├── install/                # Installation helpers and setup scripts
+├── viewers/                # Pre-built SIBR real-time viewer binaries (Windows)
+├── SIBR_viewers/           # SIBR viewer source (git submodule)
+└── assets/                 # Documentation images and evaluation charts
 ```
 
 ---
@@ -94,8 +115,8 @@ Photos of a scene
 
 ```bash
 # Clone with submodules
-git clone https://github.com/<YOUR_USERNAME>/gaussian-splatting-Windows --recursive
-cd gaussian-splatting-Windows
+git clone https://github.com/shivakumardhandapani/3D-Gaussian-Splatting-Windows --recursive
+cd 3D-Gaussian-Splatting-Windows
 
 # Create conda environment
 SET DISTUTILS_USE_SDK=1
@@ -111,7 +132,7 @@ python train.py -s <path/to/prepared/dataset>
 # Render
 python render.py -m <path/to/trained/model>
 
-# View in real-time (using pre-built SIBR viewer)
+# View in real-time (pre-built SIBR viewer included in viewers/)
 ./viewers/bin/SIBR_gaussianViewer_app -m <path/to/trained/model>
 ```
 
