@@ -1,9 +1,11 @@
 *.css linguist-detectable=false
 *.java linguist-detectable=false
-*.py linguist-detectable=true 
+*.py linguist-detectable=true
 *.js linguist-detectable=false
-*.html linguist-detectable=false  
-*.xml linguist-detectable=false 
+*.html linguist-detectable=false
+*.xml linguist-detectable=false
 *.cu linguist-detectable=false
 *.cuh linguist-detectable=false
 *.glsl linguist-detectable=false
+*.gnuplot linguist-detectable=false
+*.gp linguist-detectable=false
