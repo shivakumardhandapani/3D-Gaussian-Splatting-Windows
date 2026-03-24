@@ -1,2 +1,1 @@
-# Ignore HTML files in language detection
-*.html linguist-detectable=false
+static/* linguist-vendored
