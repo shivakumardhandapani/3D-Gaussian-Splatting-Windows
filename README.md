@@ -158,7 +158,7 @@ python train.py -s <dataset> -r 2 --densify_grad_threshold 0.0004 --densify_unti
 
 ## Evaluation Results
 
-Benchmark evaluations are documented in [`results.md`](results.md) — comparing the default vs. accelerated rasterizer, Sparse Adam optimizer, depth regularization, antialiasing, and exposure compensation across MipNeRF360, Tanks&Temples, and Deep Blending datasets.
+In progres...
 
 ---
 
