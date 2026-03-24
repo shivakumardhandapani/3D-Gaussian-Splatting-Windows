@@ -5,7 +5,6 @@
 This repo documents my hands-on journey learning 3D Gaussian Splatting — from setting up the pipeline on a consumer GPU to understanding the math well enough to eventually implement it from scratch.
 
 > For the full installation walkthrough, follow [Jon Stephens' guide](https://github.com/jonstephens85/gaussian-splatting-Windows) and his [YouTube tutorial](https://youtu.be/UXtuigy_wYc).
-=======
 ---
 
 ## What is 3D Gaussian Splatting?
