@@ -1,4 +1,2 @@
-# Mark pre-built viewer files as vendored so GitHub's language stats
-# reflect the actual project code (Python + CUDA), not the viewer bundles
-viewers/* linguist-vendored
-SIBR_viewers/* linguist-vendored
+# Ignore HTML files in language detection
+*.html linguist-detectable=false
