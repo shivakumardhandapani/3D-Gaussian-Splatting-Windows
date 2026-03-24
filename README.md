@@ -1,10 +1,108 @@
+<<<<<<< HEAD
 # 3D Gaussian Splatting — My Learning Journey
+=======
+# 3D Gaussian Splatting — Windows Setup & Learning Reference (In progress)
+>>>>>>> 8ddfa65cfe299da818f984fa5d7e509c05e2d55b
 
 > Forked from [jonstephens85/gaussian-splatting-Windows](https://github.com/jonstephens85/gaussian-splatting-Windows), which builds on the original [INRIA implementation](https://github.com/graphdeco-inria/gaussian-splatting) by Kerbl et al. (SIGGRAPH 2023).
 
 This repo documents my hands-on journey learning 3D Gaussian Splatting — from setting up the pipeline on a consumer GPU to understanding the math well enough to eventually implement it from scratch.
 
+<<<<<<< HEAD
 > For the full installation walkthrough, follow [Jon Stephens' guide](https://github.com/jonstephens85/gaussian-splatting-Windows) and his [YouTube tutorial](https://youtu.be/UXtuigy_wYc).
+=======
+---
+
+## What is 3D Gaussian Splatting?
+
+Traditional Neural Radiance Fields (NeRFs) use neural networks to represent 3D scenes, which makes them slow to both train and render. Gaussian Splatting takes a fundamentally different approach: it represents scenes as collections of millions of **3D Gaussian primitives**, each defined by:
+
+| Property | Description |
+|---|---|
+| **Position** (μ) | 3D mean — where the Gaussian sits in space |
+| **Covariance** (Σ) | 3×3 matrix defining shape & orientation (anisotropic) |
+| **Opacity** (α) | Transparency of the Gaussian |
+| **Color** (SH coefficients) | View-dependent appearance via spherical harmonics (up to degree 3) |
+
+These Gaussians are **differentiable** and rendered via a tile-based rasterizer — no ray marching required. The result: **real-time rendering (≥30 fps) at 1080p** with quality competitive to or exceeding NeRF-based methods.
+
+### Pipeline at a Glance
+
+```
+Photos of a scene
+        │
+        ▼
+   ┌──────────┐
+   │ COLMAP   │  Structure-from-Motion → camera poses + sparse point cloud
+   └────┬─────┘
+        │
+        ▼
+   ┌───────────────┐
+   │  Optimizer    │  PyTorch + CUDA — iteratively refines 3D Gaussians
+   │  (train.py)   │  from sparse points via differentiable rasterization
+   └────┬──────────┘
+        │
+        ▼
+   ┌──────────────┐
+   │  SIBR Viewer │  OpenGL real-time viewer — navigate the trained scene
+   └──────────────┘
+```
+
+### Key Concepts I'm Learning
+
+- **Differentiable Rasterization** — The custom CUDA rasterizer (`diff-gaussian-rasterization` submodule) projects 3D Gaussians to 2D, sorts them by depth per-tile, and alpha-composites them. Gradients flow back through this entire process to optimize Gaussian parameters.
+
+- **Adaptive Density Control** — During training, Gaussians are cloned (where detail is needed), split (where they're too large), or pruned (where opacity is near-zero). This happens between iterations 500–15,000 by default.
+
+- **Spherical Harmonics for View-Dependent Color** — Rather than storing a single RGB value, each Gaussian stores SH coefficients (up to degree 3 = 48 coefficients), enabling view-dependent lighting effects like specular highlights.
+
+- **Loss Function** — A weighted combination of L1 photometric loss and D-SSIM structural similarity: `L = (1 - λ) * L1 + λ * D-SSIM`, where λ = 0.2 by default.
+
+- **Depth Regularization & Antialiasing** — Extensions to the base method that improve geometric consistency and reduce aliasing artifacts, evaluated across standard benchmarks (see [results.md](results.md)).
+
+- **Exposure Compensation** — Optimizing a per-image 3×4 affine color transform to handle exposure variations across input photographs, improving training coherence without affecting real-time rendering.
+
+---
+
+## Evaluation Results
+
+Detailed benchmark evaluations are documented in [`results.md`](results.md), covering:
+
+- **Default rasterizer** vs. **Accelerated rasterizer** (from [taming-3dgs](https://github.com/graphdeco-inria/diff-gaussian-rasterization/tree/3dgs_accel))
+- **Optimizer comparison** — Default optimizer vs. Sparse Adam
+- **Feature ablations** — Depth regularization (DR), antialiasing (AA), exposure compensation
+- **Metrics** — PSNR, SSIM, LPIPS across MipNeRF360, Tanks&Temples, and Deep Blending datasets
+- **Training time comparisons** — Baseline vs. accelerated rasterizer with both optimizer variants
+
+---
+
+## Repository Structure
+
+```
+├── train.py                # Main training script — optimizes Gaussians from SfM data
+├── render.py               # Offline rendering of trained models at specified viewpoints
+├── convert.py              # Prepares raw images → COLMAP SfM dataset
+├── metrics.py              # Computes PSNR, SSIM, LPIPS evaluation metrics
+├── full_eval.py            # End-to-end evaluation on standard benchmarks
+├── results.md              # Benchmark evaluation results with charts
+├── environment.yml         # Conda environment specification
+│
+├── gaussian_renderer/      # Differentiable Gaussian rasterization pipeline (Python)
+├── scene/                  # Scene representation, dataset loaders, Gaussian model
+├── arguments/              # CLI argument definitions for all scripts
+├── submodules/
+│   ├── diff-gaussian-rasterization/  # Custom CUDA rasterizer (core engine)
+│   └── simple-knn/                   # K-nearest-neighbor utility
+├── lpipsPyTorch/           # LPIPS perceptual metric
+├── utils/                  # Loss functions, image I/O, general helpers
+│
+├── input/                  # Input images / scene data for training
+├── install/                # Installation helpers and setup scripts
+├── viewers/                # Pre-built SIBR real-time viewer binaries (Windows)
+├── SIBR_viewers/           # SIBR viewer source (git submodule)
+└── assets/                 # Documentation images and evaluation charts
+```
+>>>>>>> 8ddfa65cfe299da818f984fa5d7e509c05e2d55b
 
 ---
 
