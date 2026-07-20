@@ -157,7 +157,29 @@ python train.py -s <dataset> -r 2 --densify_grad_threshold 0.0004 --densify_unti
 
 ## My Evaluation Results
 
-In progres...
+### Chair Scene
+
+Trained on a personal capture (58 images extracted via ffmpeg, 50 train / 8 test using `--eval` LLFF hold-out).
+
+| Detail | Value |
+|---|---|
+| **Input Images** | 58 (50 train / 8 test) |
+| **Resolution** | Half (`-r 2`) |
+| **Iterations** | 30,000 |
+| **Training Time** | ~8 minutes |
+| **Final Gaussians** | 257,107 |
+| **Model Size** | ~61 MB |
+
+| Metric | Score |
+|---|---|
+| **PSNR ↑** | 32.09 dB |
+| **SSIM ↑** | 0.948 |
+| **LPIPS ↓** | 0.057 |
+
+**Notes:**
+- Ran on RTX 4070 Laptop (8 GB VRAM) with memory-saving flags: `-r 2 --densify_grad_threshold 0.0004 --densify_until_iter 10000 --data_device cpu`
+- Despite half-resolution training, metrics are strong — PSNR above 30 dB and LPIPS below 0.1 indicate high perceptual quality.
+- The `--eval` flag holds out every 8th image (LLFF-style) for test evaluation.
 
 ---
 
