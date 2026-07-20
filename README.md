@@ -176,6 +176,18 @@ Trained on a personal capture (58 images extracted via ffmpeg, 50 train / 8 test
 | **SSIM ↑** | 0.948 |
 | **LPIPS ↓** | 0.057 |
 
+**Viewer Screenshots (SIBR Real-Time Viewer):**
+
+| Front View | Back View |
+|---|---|
+| ![Front](assets/chair_front.png) | ![Back](assets/chair_back.png) |
+
+| Side / Context View | Top-Down View |
+|---|---|
+| ![Side](assets/chair_side_context.png) | ![Top-Down](assets/chair_topdown.png) |
+
+The front view shows clean reconstruction of the backpack and chair. As the camera moves further from the trained viewpoints (top-down, edges), floater artifacts become visible — a common limitation when input coverage is sparse or the scene has untextured regions.
+
 **Notes:**
 - Ran on RTX 4070 Laptop (8 GB VRAM) with memory-saving flags: `-r 2 --densify_grad_threshold 0.0004 --densify_until_iter 10000 --data_device cpu`
 - Despite half-resolution training, metrics are strong — PSNR above 30 dB and LPIPS below 0.1 indicate high perceptual quality.
